@@ -35,7 +35,7 @@ const App = () => {
     };
     // -- effects
     setNext(sample + 1);
-    document.title = `Current Cards: ${sample}`;
+    document.title = `Ping Total: ${sample}`;
     window.addEventListener("mousemove", handleMouseMove);
     window.addEventListener("online", () => setOnline(true));
     window.addEventListener("offline", () => setOnline(false));
@@ -54,6 +54,7 @@ const App = () => {
   // -- RENDER --
   return (
     <div>
+      <h1>React Tracker</h1>
       <button type="button" onClick={() => setSample(sample + 1)}>
         Increment Hook State
       </button>
